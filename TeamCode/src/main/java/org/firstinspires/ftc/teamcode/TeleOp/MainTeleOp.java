@@ -124,9 +124,15 @@ public class MainTeleOp extends OpMode {
         {
             liftMotor.setPower(0);
         }
-//        if(gamepad1.y){
-//            //add servo code where it flips the box over to drop the freight
-//        }
+        if(gamepad1.right_bumper){
+            //add servo code where it flips the box over to drop the freight
+            liftServo.setPosition(.5);
+        } else if(gamepad1.left_bumper) {
+            liftServo.setPosition(0);
+        }
+        else {
+            liftServo.setPosition(0);
+        }
          
     }
     
