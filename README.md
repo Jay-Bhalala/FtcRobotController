@@ -1,1 +1,1 @@
-Program for our First Tech Challenge Robot
+This repository contains the code for our First Tech Challenge robot.
